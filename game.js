@@ -42,7 +42,7 @@ $('.btn').click(function(){
     userClickedPattern.push(userChosenColour);
     playSound(userChosenColour);
     animatePress(userChosenColour);
-  checkanswer(userClickedPattern.length-1);
+    checkanswer(userClickedPattern.length-1);
 });
 
 
@@ -77,11 +77,8 @@ function checkanswer (currentLevel) {
 
                 column = 0;
                 row++;
-                if (column == 0 && row == 1) {
-                    alert("Ok, seems like we're getting something, keep going.")
-                }
                 if (column == 0 && row == 2){
-                    alert("Ok now we're talking.")
+                    alert("Ok now we're talking. A bit distrtacting isn't it? LOL. You ain't rembering those patterns no more.")
                 }
                 if (row == 4 && column == 4) {
                     $('td').css('background-color', 'red');
@@ -104,18 +101,20 @@ function checkanswer (currentLevel) {
            
             nextSequence ();
            }, 1000); 
-           levelStage ++;
+           
           
 
          
         }
     } else {
 
-        $('h1').text('Game Over. Press any key to restart.');
+        let score = gamePattern.length -1;
+        $('h1').html('Game Over. Press any key to restart.' + 'Your score was ' + score + '.');
         $('body').addClass('game-over');
         $('table').addClass('hidden');
         $('.gameover-img').attr('src', 'game-over.png')
         $('.score').addClass('hidden');
+        
         gameover.play ();
         started = false;
         level = 0;
