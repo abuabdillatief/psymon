@@ -1,0 +1,98 @@
+body {
+  text-align: center;
+  background-color: whitesmoke;
+}
+td {
+  border: solid;
+  background-color: grey;
+  border-radius: 1rem;
+  border-color: green ;
+}
+tr {
+  width: 5rem;;
+}
+.green {
+  background-color: green;
+}
+
+.hidden {
+  visibility: hidden;
+}
+.gameover-img {
+max-width: 40%;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 4rem;
+  margin:  5%;
+  color: black;
+}
+.score {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  3%;
+  color: black;
+}
+
+.trophy-animate {
+  position: relative;
+  bottom: 10px;
+}
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+  color: #000;
+}
+
+.ranking {
+  color:rgba(130, 148, 129, 0.68);
+  text-align: center;
+  position: relative;
+  margin:auto;
+  border: solid;
+  width: 40rem;
+  height: 17rem;
+  border-radius: 1rem;
+}
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid black;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
