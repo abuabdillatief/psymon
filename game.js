@@ -9,6 +9,10 @@ var column = 0;
 var name = []
 var gamestart = new Audio ('game-start.wav');
 var gameover = new Audio ('game-over.wav');
+function playSound (name) {
+    var audio = new Audio ('sounds/' + name + '.mp3');
+    audio.play();
+}
     
 $(document).keydown(function(){
     if (!started){
@@ -54,10 +58,7 @@ function nextSequence() {
  animatePress(randomChosenColour);
 }
 
-function playSound (name) {
-    var audio = new Audio ('sounds/' + name + '.mp3');
-    audio.play();
-}
+
 
 function animatePress (currentColour) {
     var activeButton = $('#' + currentColour);
