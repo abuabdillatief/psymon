@@ -7,15 +7,13 @@ var level = 0;
 var row = 0;
 var column = 0;
 var name = []
-
-
-
+var gamestart = new Audio ('game-start.wav');
+var gameover = new Audio ('game-over.wav');
+    
 $(document).keydown(function(){
     if (!started){
-
         var names = prompt('What\'s your name?');
-        var audio = new Audio ('game-start.wav');
-        audio.play();
+        gamestart.play();
         $('h1').text('It\'s about to begin.');
         $('body').removeClass('game-over');
         $('table').removeClass('hidden');
@@ -117,8 +115,7 @@ function checkanswer (currentLevel) {
         $('table').addClass('hidden');
         $('.gameover-img').attr('src', 'game-over.png')
         $('.score').addClass('hidden');
-        var audio = new Audio ('game-over.wav');
-        audio.play ();
+        gameover.play ();
         started = false;
         level = 0;
         $('td').css('background-color', 'grey');
