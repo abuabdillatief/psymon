@@ -19,14 +19,16 @@ tr {
   visibility: hidden;
 }
 .gameover-img {
-max-width: 40%;
+max-width: 30%;
 }
 
 #level-title {
   font-family: 'Press Start 2P', cursive;
   font-size: 4rem;
-  margin:  5%;
+  margin:  auto;
+  line-height: 5.5rem;
   color: black;
+  max-width: 55%;
 }
 .score {
   font-family: 'Press Start 2P', cursive;
